@@ -1,4 +1,4 @@
-/*  couleur 1: #FFE7B1; couleur2: #5977B2; couleur 3: #B1CCFF;  */
+/*  couleur 1: #FFE7B1; couleur2: #5977B2; couleur 3: #B1CCFF; couleur4 : #B29C6A; */
 
 body{
 	font-family: 'Bad Script', cursive;
@@ -22,6 +22,7 @@ footer{
 	background-color:#5977B2;
 	height:100px;
 	color:#FFE7B1;
+	border-top: 5px dotted #FFE7B1;
 }
 .no_padding{
 	padding:0px;
