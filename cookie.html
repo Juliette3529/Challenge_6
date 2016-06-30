@@ -13,19 +13,19 @@
 		</header>
 		<div class="col-md-12 score text-center chat score1">
 			<p> Nombre de Cookies </p>
-			<p id="clic"> 0 </p>
+			<p id="score"> </p>
 		</div>
 		</div>
 		<div class="col-md-12 block_1">
 		<div class="col-md-4 no_padding">
 		</div>
 		<div class="col-md-4 cookie">
-			<img src="elements/cookie.png" class="cookie_img" onclick="onClick()" id="bouton" style="cursor:pointer;" />
+			<img src="elements/cookie.png" class="cookie_img" onclick="click()" id="bouton" style="cursor:pointer;" />
 		</div>
 		<div class="col-md-4 boutique no_padding">
+		<button class="bouton" onclick="buymulti()" id="multi">multiplicateur</button>
 			
 		</div>
-
 
 
 
@@ -36,12 +36,44 @@
 
 	</body>
 <script type="text/javascript">
-	var clic=0;
-	function onClick(){
-		clic +=1;
-	document.getElementById("clic").innerHTML = clic;
-	};
-</script>
+		var bouton = document.getElementById("bouton");
+		var Tmulti = document.getElementById("multi");
+		var Tscore = document.getElementById("score");
+		score = 0;
+		multi = 1;
+		costmulti= 50;
+function Tableau(){
+	Tscore.innerHTML = score ; 
 
+};
+
+
+function Tabmulti(){
+    Tmulti.innerHTML = " multiplicateur x " + multi + " \n cost :  " + prixmulti() ;
+};
+function click() {
+	score = score + multi ;
+	Tableau();
+};
+function prixmulti(){
+	return 50 * multi ;
+};
+function buymulti(){
+	if ( score >= prixmulti() ) {
+		score = score - costmulti ;
+		multi = multi + 1 ;
+		Tableau();
+		Tabmulti();
+	} else {
+		 Tabmulti.style.cursor = not-allowed;
+	}
+							};
+
+bouton.onclick = click;
+multi.onclick = buymulti;
+Tableau();
+Tabmulti();
+
+</script>
 
 </html>

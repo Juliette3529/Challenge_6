@@ -28,20 +28,29 @@ footer{
 	padding:0px;
 }
 .cookie_img{
-	width: 95%;
-	height: 95%;
-	margin-top:100px;
+	width: 90%;
+	height: 90%;
+	margin-top:80px;
+}
+.cookie_img:active{
+	width: 110%;
+	height: 110%;
+	margin-top:65px;
 }
 .score{
 	height:100px;
 }
 .score1{
-	margin-top:30px;
-	margin-left:520px;
+	margin-top:50px;
+	margin-left:570px;
 	border:5px double #5977B2;
 }
 .chat{
 	height:auto;
 	width:150px;
 	font-size:30px;
+}
+.bouton{
+	height:75px;
+	width:125px;
 }
