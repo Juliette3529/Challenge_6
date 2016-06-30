@@ -27,3 +27,11 @@ footer{
 .no_padding{
 	padding:0px;
 }
+.btn{
+	width: 125px;
+	height: 65px;
+	font-size:32px;
+	font-weight:bold;
+	color:#5977B2;
+	background-color:#B1CCFF;
+}
