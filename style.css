@@ -30,7 +30,7 @@ footer{
 .cookie_img{
 	width: 95%;
 	height: 95%;
-	margin-top:40px;
+	margin-top:100px;
 }
 .score{
 	height:100px;
@@ -41,7 +41,7 @@ footer{
 	border:5px double #5977B2;
 }
 .chat{
-	height:65px;
+	height:auto;
 	width:150px;
 	font-size:30px;
 }

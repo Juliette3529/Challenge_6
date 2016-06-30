@@ -11,14 +11,16 @@
 		<header class="col-md-12 text-center no_padding">
 			<h1> Cookie Clicker </h1>
 		</header>
-		<div class="col-md-12 score text-center chat score1" value="0" id="affichage">
-				  </div>
+		<div class="col-md-12 score text-center chat score1">
+			<p> Nombre de Cookies </p>
+			<p id="clic"> 0 </p>
+		</div>
 		</div>
 		<div class="col-md-12 block_1">
 		<div class="col-md-4 no_padding">
 		</div>
 		<div class="col-md-4 cookie">
-			<img src="elements/cookie.png" class="cookie_img" onclick="" id="bouton" style="cursor:pointer;" />
+			<img src="elements/cookie.png" class="cookie_img" onclick="onClick()" id="bouton" style="cursor:pointer;" />
 		</div>
 		<div class="col-md-4 boutique no_padding">
 			
@@ -33,7 +35,12 @@
 	
 
 	</body>
-<script>
+<script type="text/javascript">
+	var clic=0;
+	function onClick(){
+		clic +=1;
+	document.getElementById("clic").innerHTML = clic;
+	};
 </script>
 
 
