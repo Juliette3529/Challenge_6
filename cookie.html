@@ -17,25 +17,27 @@
 		<div class="col-md-4"></div>
 		<div class="col-md-4 text-center score1">
 			<p> Nombre de Cookies </p>
-			<p id="score"> </p>
+			<p id="score"></p>
 		</div>
 		</div>
 		</div>
 		<div class="col-md-12 block_1">
 		<div class="col-md-4 no_padding">
 		</div>
+		
 		<div class="col-md-4 cookie">
 			<img src="elements/cookie.png" class="cookie_img" onclick="click()" id="bouton" style="cursor:pointer;" />
 		</div>
 		<div class="col-md-4 boutique no_padding">
-		<button class="bouton" onclick="buymulti()" id="multi">multiplicateur</button>
+		<button class="bouton" onclick="buymulti()" id="multi"></button>
+		<button class="bouton" onclick="autoclick()" id="autoclick">Acheter autoclick</button>
 			
 		</div>
 		</div>
 
 		<div class="col-md-12 fleur">
 		</div>
-		<footer class="col-lg-12 text-center ">  <p>Par Juliette et Thommas TuPeuxPasTest SARL © </p>
+		<footer class="col-lg-12 text-center ">  <p>Par Juliette et Thomas TuPeuxPasTest SARL © </p>
 		</footer>
 	
 
@@ -54,7 +56,7 @@ function Tableau(){
 
 
 function Tabmulti(){
-    Tmulti.innerHTML = " multiplicateur x " + multi + " \n cost :  " + prixmulti() ;
+    Tmulti.innerHTML = " Multiplicateur x " + multi + " \n cost :  " + prixmulti() ;
 };
     
 function click() {
@@ -76,7 +78,12 @@ function buymulti(){
 		 Tabmulti.style.cursor = not-allowed;
 	}
 };
-
+    /* TEST AUTO-CLICK 
+      function autoclick () {
+    var autoclick = setInterval(click + 10), 1000);
+}
+  */
+    
 bouton.onclick = click;
 multi.onclick = buymulti;
 Tableau();

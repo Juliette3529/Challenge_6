@@ -47,9 +47,9 @@ footer{
 }
 .score1{
 	border:5px double #5977B2;
-	border-radius: 25px 25px 25px 25px;
+	border-radius: 25px ;
 	margin-top:35px;
-    	height:auto;
+    height:auto;
 	width:150px;
 	font-size:30px;
 }
