@@ -46,33 +46,36 @@
 		var Tscore = document.getElementById("score");
 		score = 0;
 		multi = 1;
-		costmulti= 50;
+		costmulti= 10;
+    
 function Tableau(){
 	Tscore.innerHTML = score ; 
-
 };
 
 
 function Tabmulti(){
     Tmulti.innerHTML = " multiplicateur x " + multi + " \n cost :  " + prixmulti() ;
 };
+    
 function click() {
 	score = score + multi ;
 	Tableau();
 };
+    
 function prixmulti(){
-	return 50 * multi ;
+	return 10 * multi ;
 };
+    
 function buymulti(){
 	if ( score >= prixmulti() ) {
-		score = score - costmulti ;
+		score = score - prixmulti() ;
 		multi = multi + 1 ;
 		Tableau();
 		Tabmulti();
 	} else {
 		 Tabmulti.style.cursor = not-allowed;
 	}
-							};
+};
 
 bouton.onclick = click;
 multi.onclick = buymulti;
