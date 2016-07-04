@@ -1,12 +1,13 @@
 /*  couleur 1: #FFE7B1; couleur2: #5977B2; couleur 3: #B1CCFF; couleur4 : #B29C6A; */
+/* */
 
 body{
 	font-family: 'Bad Script', cursive;
-	background-color:#FFE7B1;
+	background-color:#FFE7B1 ;
+
 }
 h1{
 	font-size:45px;
-	color:#FFE7B1;
 }
 p{
 	font-size:20px;
@@ -15,6 +16,7 @@ header{
 	background-color:#5977B2;
 	color:#FFE7B1;
 	border-bottom: 5px dotted #FFE7B1;
+    background-image:url("elements/bghover");
 }
 .block_1{
 	height:500px;
@@ -28,6 +30,7 @@ footer{
 	height:100px;
 	color:#FFE7B1;
 	border-top: 5px dotted #FFE7B1;
+    background-image:url("elements/bghover");
 }
 .no_padding{
 	padding:0px;
@@ -54,6 +57,7 @@ footer{
 	height:auto;
 	width:150px;
 	font-size:30px;
+    background-color:#FFE7B1;
 
 }
 .bouton{
